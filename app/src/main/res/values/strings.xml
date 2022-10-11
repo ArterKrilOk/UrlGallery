@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UrlGallery</string>
+    <string name="folders">Folders</string>
+    <string name="album">Album</string>
+    <string name="items_count">Items: %1$d</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="generate_share_link">Generate share link</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/albumsFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="space.pixelsg.urlgallery.ui.gallery.GalleryFragment"
+        android:label="GalleryFragment"
+        tools:layout="@layout/gallery_fragment">
+        <action
+            android:id="@+id/action_galleryFragment_to_fileActivity"
+            app:destination="@id/fileActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="space.pixelsg.urlgallery.ui.albums.AlbumsFragment"
+        android:label="AlbumsFragment"
+        tools:layout="@layout/albums_fragment">
+        <action
+            android:id="@+id/action_albumsFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/fileActivity"
+        android:name="space.pixelsg.urlgallery.ui.file.FileActivity"
+        android:label="activity_file"
+        tools:layout="@layout/activity_file" />
+</navigation>
